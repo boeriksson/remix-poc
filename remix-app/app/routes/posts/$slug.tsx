@@ -9,10 +9,10 @@ export const loader: LoaderFunction = async ({ params }) => {
 }
 
 export default function PostSlug() {
-    const slug = useLoaderData();
+    const post = useLoaderData();
     return (
         <div>
-            <h1>Some Post: {slug}</h1>
+            <h1>Some Post: {post.title}</h1>
         </div>
     )
 }
